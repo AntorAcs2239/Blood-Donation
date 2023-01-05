@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profileeee"
+    tools:context=".ProfileFrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="30dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="20dp"
+            android:fontFamily="@font/aldrich"
+            android:padding="5dp"
+            android:text="Profile Setting"
+            android:textAlignment="center"
+            android:textColor="@color/txcolor"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/backforsighnup"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="Name"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/backforsighnup"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="Phone Number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/backforsighnup"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="Area"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <EditText
+            android:id="@+id/district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/backforsighnup"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="District"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/area" />
+
+        <TextView
+            android:id="@+id/blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/backforsighnup"
+            android:elevation="10dp"
+            android:fontFamily="@font/aldrich"
+            android:padding="5dp"
+            android:text="Blood Group"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/district" />
+
+        <Spinner
+            android:id="@+id/bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tintmode"
+            app:layout_constraintBottom_toBottomOf="@+id/blood"
+            app:layout_constraintEnd_toEndOf="@+id/district"
+            app:layout_constraintTop_toTopOf="@+id/blood" />
+
+        <TextView
+            android:id="@+id/ss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/backforsighnup"
+            android:elevation="10dp"
+            android:fontFamily="@font/aldrich"
+            android:padding="5dp"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/blood"
+            app:layout_constraintStart_toStartOf="@+id/phone"
+            app:layout_constraintTop_toBottomOf="@+id/blood" />
+
+        <TextView
+            android:id="@+id/lastdonate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/backforsighnup"
+            android:drawableRight="@drawable/calender"
+            android:drawablePadding="5dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:minLines="3"
+            android:padding="10dp"
+            android:text="Last Blood Donation"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:drawableTint="#551313"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/ss" />
+
+        <TextView
+            android:id="@+id/numofd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/backforsighnup"
+            android:elevation="10dp"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="Number of Donation"
+            android:textColor="#931010"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/lastdonate" />
+
+        <Spinner
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tintmode"
+            app:layout_constraintBottom_toBottomOf="@+id/ss"
+            app:layout_constraintEnd_toEndOf="@+id/lastdonate"
+            app:layout_constraintTop_toTopOf="@+id/ss" />
+
+        <TextView
+            android:id="@+id/updatedetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/backforsighnupforaction"
+            android:elevation="10dp"
+            android:fontFamily="@font/aldrich"
+            android:padding="8dp"
+            android:text=" Update Profile"
+            android:textAlignment="center"
+            android:textColor="@color/txcolor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/status"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/numofd" />
+
+        <Spinner
+            android:backgroundTint="@color/tintmode"
+            android:id="@+id/numofdonate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/numofd"
+            app:layout_constraintEnd_toEndOf="@+id/lastdonate"
+            app:layout_constraintTop_toTopOf="@+id/numofd" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

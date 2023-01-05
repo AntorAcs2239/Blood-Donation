@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="50dp"
+    android:padding="20dp"
+    android:layout_marginLeft="5dp"
+    app:layout_goneMarginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backforsighnup"
+
+        android:fontFamily="@font/akaya_telivigala"
+        android:padding="5dp"
+        android:text="Login Page"
+        android:textAlignment="center"
+        android:textColor="@color/txcolor"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/backforsighnup"
+        android:drawableLeft="@drawable/email2"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:ems="10"
+        android:fontFamily="@font/akaya_telivigala"
+        android:hint="Email"
+
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backforsighnup"
+        android:drawableLeft="@drawable/lock2"
+        android:drawablePadding="10dp"
+        android:elevation="15dp"
+        android:ems="10"
+        android:fontFamily="@font/akaya_telivigala"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="220dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/backforsighnupforaction"
+        android:elevation="20dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:padding="5dp"
+
+        android:text="Login"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/txcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/forgetpassword" />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backforsighnup"
+        android:elevation="10dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:padding="5dp"
+        android:text="Create an Account"
+        android:textColor="@color/txcolor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/backforsighnup"
+        android:elevation="5dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:padding="3dp"
+        android:text="Forget Password?"
+        android:textColor="@color/txcolor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
